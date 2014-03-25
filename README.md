@@ -1,0 +1,1 @@
+Administration panel for editing the photo galleries inside Telemundo.com. Ability to manage seo keywords, photo names and metatags.
