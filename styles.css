@@ -1,0 +1,191 @@
+body {
+	text-align: left;
+	/*background: #fff url('http://msnlatino.telemundo.com/_images/telemundo_bg_tile.jpg') repeat fixed left top;*/
+	background: lightblue;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	background: #f1f1f1;
+	-webkit-box-shadow: 0px 0px 7px 0px #999;
+	box-shadow: 0px 0px 7px 0px #999;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.page-header {
+	margin: 10px 0 20px;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+/* breadcrumb */
+.breadcrumb {
+	background-color: #333;
+}
+.breadcrumb a {
+	color: #fff;
+}
+a.next-gal-btn {
+	margin: -5px -12px 0 0;
+}
+/* -------------------------------- */
+
+
+/* gallery selection */
+.gallery-selection .form-group {
+	width: 330px;
+}
+.gallery-selection .control-label {
+	width: 90px;
+	text-align: right;
+	padding-right: 5px;
+}
+.gallery-selection .form-control {
+	width: 230px;
+}
+/* -------------------------------- */
+
+
+/* status bar */
+#status-bar {
+	width: 17%;
+	border: #ccc solid 1px;
+	-webkit-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #fff;
+	padding: 14px;
+	/*position: fixed;*/
+}
+#status-bar .label-default {
+	color: #333;
+	border: solid;
+	border-radius: .25em;
+	border-width: 1px;
+	border-color: #ccc;
+	background-color: #fff;
+}
+
+.gal-num-list a,
+.thumbnail a.gal-num {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: none #5cb85c;
+	padding-top: 10px;
+	margin: 4px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.gal-num-list a.btn-default {
+	background: none #fff;
+}
+/* -------------------------------- */
+
+
+/* content box */
+.content-box {
+	position: relative;
+	border: #ccc solid 1px;
+	-webkit-border-radius: 7px;
+	-o-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #fff;
+	padding: 24px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.content-box.pull-right {
+	max-width: 81.63%;
+}
+/* -------------------------------- */
+
+
+/* form styles */
+.form-group {
+	margin-bottom: 30px;
+}
+/* -------------------------------- */
+
+
+/* form actions */
+.form-actions {
+	text-align: center;
+	padding: 19px 20px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #e5e5e5;
+}
+.form-actions .btn {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* -------------------------------- */
+
+
+/* well */
+.well {
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	font-size: 13px;
+	background-image: none;
+	margin-bottom: 10px;
+}
+.well .label {
+	font-size: 90%;
+	margin-right: 4px;
+	
+}
+/* -------------------------------- */
+
+
+/* button group */
+.btn-box {
+	max-width: 400px;
+	margin: 0 auto 10px;
+}
+/* -------------------------------- */
+
+
+/* thumbnail row */
+.row {
+	margin-top: 30px;
+	margin-left: -7px;
+	margin-right: -7px;
+}
+.row .page-header {
+	margin: 10px 7px 30px;
+}
+.col-md-3, .col-xs-6 {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* thumbnail box */
+.thumbnail .well {
+	height: 55px;
+	word-break: break-all;
+	overflow: scroll;
+}
+.thumbnail .form-group {
+	margin-bottom: 10px;
+}
+.thumbnail a.gal-num {
+	position: absolute;
+	top: 8px;
+	left: 14px;
+	color: #fff;
+	background: #333;
+	margin: 0px;
+}
+/* -------------------------------- */

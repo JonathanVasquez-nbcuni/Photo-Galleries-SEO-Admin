@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Photo Galleries Editor Plus V 0.1</title>
+
+<!-- BOOTSTRAP -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- END -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+	$('#status-bar').css('top', $(this).scrollTop() + "px");
+});
+</script>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="page-header">
+		<h1>Photo Galleries Editor Plus <small>v 0.1</small></h1>
+	</div>
+
+	<ol class="breadcrumb">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Novelas</a></li>
+		<li class="active">Lorem ipsum dolor sit amet</li>
+		<a href="#" class="btn btn-success btn-sm next-gal-btn pull-right" role="button">Next Gallery &nbsp;<span class="glyphicon glyphicon-arrow-right"></span></a>
+	</ol>
+
+	<!-- status bar -->
+	<div id="status-bar" class="text-center pull-left">
+		<div class="page-header">
+			<h4>Status Bar</h4>
+			<span class="label label-default">Un-saved</span>
+			<span class="label label-success">Saved</span>
+		</div>
+		<div class="gal-num-list">
+			<a class="btn btn-default" href="#gal-num1">1</a>
+			<a class="btn btn-default" href="#gal-num2">2</a>
+			<a class="btn btn-default" href="#gal-num3">3</a>
+			<a class="btn btn-success" href="#gal-num4">4</a>
+			<a class="btn btn-success" href="#gal-num5">5</a>
+			<a class="btn btn-success" href="#gal-num6">6</a>
+			<a class="btn btn-success" href="#gal-num7">7</a>
+			<a class="btn btn-default" href="#">8</a>
+			<a class="btn btn-default" href="#">9</a>
+			<a class="btn btn-default" href="#">10</a>
+			<a class="btn btn-success" href="#">11</a>
+			<a class="btn btn-default" href="#">12</a>
+		</div>
+	</div>
+	<!-- end status bar -->
+
+	<section class="content-box pull-right">
+		<h5 class="text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit</h5>
+
+		<form role="form">
+			<div class="form-group">
+				<label for="title">Title</label>
+				<input type="text" class="form-control" id="title" placeholder="Edit the title">
+			</div>
+			<div class="form-group">
+				<label for="keywords">Keywords</label>
+				<div class="well well-sm"><span class="label label-primary">Praesent</span><span class="label label-primary">Accumsan</span><span class="label label-primary">Quis enim</span><span class="label label-primary">Lacinia</span></div>
+				<textarea class="form-control" id="keywords" rows="1">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+			</div>
+			<div class="form-group">
+				<label for="description">Description</label>
+				<div class="well well-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit dolor nec turpis auctor commodo. Pellentesque sit amet convallis mi, quis faucibus augue. Cras semper pellentesque euismod. Curabitur auctor erat quam, eu varius nunc feugiat et. Praesent accumsan quis enim at lacinia. Proin auctor dapibus elit in elementum.</div>
+				<textarea class="form-control" id="description" rows="3">Edit the description</textarea>
+			</div>
+
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span> Update Info</button>
+			</div>
+		</form>
+
+        <!-- current gallery images -->
+        <div class="row">
+
+			<div class="page-header">
+				<h4>Images in current gallery <small>- 20 total images</small></h4>
+			</div>
+
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+					  <a id="gal-num1" class="btn btn-default gal-num" href="#">1</a>
+                    <img src="http://fakeimg.pl/300x200/">
+                    <div class="caption">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Edit the file name</label>
+                                <input type="text" class="form-control" value="Lorem_ipsum_consectetur.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label>Edit Keywords</label>
+                                <textarea class="form-control" rows="2">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-xs btn-block"><span class="glyphicon glyphicon-refresh"></span> Update</button>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+					  <a id="gal-num2" class="btn btn-default gal-num" href="#">2</a>
+                    <img src="http://fakeimg.pl/300x200/">
+                    <div class="caption">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Edit the file name</label>
+                                <input type="text" class="form-control" value="Lorem_ipsum_consectetur.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label>Edit Keywords</label>
+                                <textarea class="form-control" rows="2">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-xs btn-block"><span class="glyphicon glyphicon-refresh"></span> Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+					  <a id="gal-num3" class="btn btn-default gal-num" href="#">3</a>
+                    <img src="http://fakeimg.pl/300x200/">
+                    <div class="caption">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Edit the file name</label>
+                                <input type="text" class="form-control" value="Lorem_ipsum_consectetur.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label>Edit Keywords</label>
+                                <textarea class="form-control" rows="2">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-xs btn-block"><span class="glyphicon glyphicon-refresh"></span> Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+					  <a id="gal-num4" class="btn btn-default gal-num" href="#">4</a>
+                    <img src="http://fakeimg.pl/300x200/">
+                    <div class="caption">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Edit the file name</label>
+                                <input type="text" class="form-control" value="Lorem_ipsum_consectetur.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label>Edit Keywords</label>
+                                <textarea class="form-control" rows="2">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-xs btn-block"><span class="glyphicon glyphicon-refresh"></span> Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+					  <a id="gal-num5" class="btn btn-default gal-num" href="#">5</a>
+                    <img src="http://fakeimg.pl/300x200/">
+                    <div class="caption">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Edit the file name</label>
+                                <input type="text" class="form-control" value="Lorem_ipsum_consectetur.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label>Edit Keywords</label>
+                                <textarea class="form-control" rows="2">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-xs btn-block"><span class="glyphicon glyphicon-refresh"></span> Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+					  <a id="gal-num6" class="btn btn-default gal-num" href="#">6</a>
+                    <img src="http://fakeimg.pl/300x200/">
+                    <div class="caption">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Edit the file name</label>
+                                <input type="text" class="form-control" value="Lorem_ipsum_consectetur.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label>Edit Keywords</label>
+                                <textarea class="form-control" rows="2">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-xs btn-block"><span class="glyphicon glyphicon-refresh"></span> Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+					  <a id="gal-num7" class="btn btn-default gal-num" href="#">7</a>
+                    <img src="http://fakeimg.pl/300x200/">
+                    <div class="caption">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Edit the file name</label>
+                                <input type="text" class="form-control" value="Lorem_ipsum_consectetur.jpg">
+                            </div>
+                            <div class="form-group">
+                                <label>Edit Keywords</label>
+                                <textarea class="form-control" rows="2">Praesent, Accumsan, Quis enim, Lacinia</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-xs btn-block"><span class="glyphicon glyphicon-refresh"></span> Update</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end current gallery images -->
+
+		<div class="form-actions clearfix">
+			<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span> Update All</button>
+			<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Commit All / Go to the Next Gallery</button>
+		</div>
+
+	</section>
+
+
+</div>
+</body>
+</html>
